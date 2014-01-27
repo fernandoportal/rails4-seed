@@ -1,0 +1,22 @@
+<div class="navbar navbar-inverse navbar-static-top" role="navigation">
+	<div class="navbar-header pull-left">
+      <a class="navbar-brand" href="/"><%= t('project_name')%></a>
+    </div>
+    <div class="navbar-header pull-right">
+    	<% if current_user %>
+	    	<a href="/signout" class="btn btn-danger navbar-btn" style="margin-right:10px;"><%= t('signout') %></a>
+        <% else %>
+	    	<div class="btn-group">
+	  			<button type="button" class="btn btn-success navbar-btn dropdown-toggle" data-toggle="dropdown" style="margin-right:10px;">
+	    			<%= t('signin') %> <span class="caret"></span>
+	  			</button>
+	  			<ul class="dropdown-menu" role="menu" style="left:-135px;">
+	    			<li><a href="/auth/facebook"><%= image_tag('facebook_512.png', :style => "height:25px;max-width:100%;", :alt => 'sign in with facebook') %> Sign In with facebook</a></li>
+	    			<li><a href="/auth/google_oauth2"><%= image_tag('google_512.png', :style => "height:25px;", :alt => 'sign in with google+') %> Sign In with google+</a></li>
+	  				<li><a href="/auth/twitter"><%= image_tag('twitter_512.png', :style => "height:25px;", :alt => 'sign in with twitter') %> Sign In with twitter</a></li>
+	  			</ul>
+			</div>
+		<% end %>
+	</div>
+</div>
+      

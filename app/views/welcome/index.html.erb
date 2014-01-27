@@ -1,0 +1,27 @@
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="jumbotron">
+  <div class="container">
+    <h1><%= t('hello')%></h1>
+    <p><%= t('app_intro') %></p>
+    <% if current_user %>
+    	<%= link_to t('go_to_profile'), profile_path, :class => "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>
+
+<div class="container">
+  <!-- Example row of columns -->
+  <div class="row">
+    <div class="col-md-4">
+      <h2>Omniauth</h2>
+      <p><%= t('omniauth_p') %></p>
+    </div>
+    <div class="col-md-4">
+      <h2>Twitter Bootstrap 3</h2>
+      <p><%= t('twitter_bootstrap_p') %></p>
+   </div>
+    <div class="col-md-4">
+      <h2>I18n</h2>
+      <p><%= t('i18n_p') %></p>
+    </div>
+  </div>

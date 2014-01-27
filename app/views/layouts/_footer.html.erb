@@ -1,0 +1,9 @@
+<div id="footer">
+  	<div class="container">
+  		<hr>
+		<div class="pull-right" style="height: 35px;">
+			<%= link_to_unless I18n.locale == :en, t('en'), set_language_english_path %> |
+			<%= link_to_unless I18n.locale == :es, t('es'), set_language_spanish_path %>
+		</div>
+  	</div>
+</div>

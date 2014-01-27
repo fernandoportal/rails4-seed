@@ -1,0 +1,13 @@
+<% [:notice, :error, :alert].each do |level| %>
+  <% unless flash[level].blank? %>
+    <div id="alert_msg" class="alert alert-<%= flash_class(level) %> fade in text-center" style="position:absolute;width: 100%;z-index: 7000;">
+      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+      <%= content_tag :p, flash[level] %>
+    </div>
+  <% end %>
+<% end %>
+<script>
+	setTimeout(function() {
+    	$("#alert_msg").alert('close')
+	}, 3000);
+</script>
