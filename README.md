@@ -1,10 +1,15 @@
-== Intro
+<h1>Intro</h1>
 
-This is a *rails 4* app  intended to be used as boilerplate for your own app, it has *omniauth* with:
-*facebook* *twitter* and *google+* it is also integrated with *twitter bootstrap 3*
+<p:This is a <strong>rails 4</strong> app  intended to be used as boilerplate for your own app, it has <strong>omniauth</strong> with:
+</strong>facebook</strong> <strong>twitter</strong> and <strong>google+</strong> it is also integrated with </strong>twitter bootstrap 3</strong></p>
 
-== Install
+<h1>Install</h1>
 
-run bundle to install al the gems
-then run db:migrate to run migrations (Users table will be created)
+<h5>In the command line run:</h5> 
+<pre>
+bundle
+db:migrate
+</pre>
+
+<p>This will install the gems specified in <strong>Gemfile</strong></p>
 
