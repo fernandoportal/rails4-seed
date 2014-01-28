@@ -20,8 +20,11 @@
 </head>
 <body>
 	<%= render 'layouts/header' %>
-	<%= render partial: "layouts/flash_messages", flash: flash %> 
-	<%= yield %>
+	<%= render partial: "layouts/flash_messages", flash: flash %>
+	<div id="loading-page" style="width:100%;height: 100%;position: absolute; z-index:-5000;">
+		<%= image_tag('ajax-loader.gif', {:class => "img-responsive", :style => "margin: 0 auto;top:200px;position:relative;", :alt => 'loading'}) %>
+	</div> 
+	<div id="primary-content"><%= yield %>
 	<%= render 'layouts/footer' %>
 
 </body>

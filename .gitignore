@@ -18,3 +18,11 @@
 config/initializers/omniauth.rb
 
 config/initializers/omniauth.rb
+
+app/.DS_Store
+
+app/assets/.DS_Store
+
+app/assets/stylesheets/.DS_Store
+
+app/assets/stylesheets/.DS_Store
